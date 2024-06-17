@@ -1,0 +1,159 @@
+/* App.js */
+
+.main-content {
+  margin-top: 50px;
+  padding: 0px;
+}
+
+/* Reservation.js */
+.form {
+  margin-top: 100px;
+}
+
+
+.navbar {
+  background-color: #343a40;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #343a40;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .fixed-top {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #ff6347 !important;
+}
+
+body {
+  background: #8E0E00;
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+  background: linear-gradient(to right, #1F1C18, #8E0E00);
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-card {
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.modal-body img {
+  width: auto;
+  height: auto;
+}
+
+/* HomePage.js */
+
+@keyframes slideShow {
+  0% {
+    background-image: url('../public/images/villano.jpg');
+  }
+
+  33% {
+    background-image: url('../public/images/Planeta.jpeg');
+  }
+
+  66% {
+    background-image: url('../public/images/Horror.jpg');
+  }
+
+  100% {
+    background-image: url('../public/images/BadBoys.jpg');
+  }
+}
+
+.welcome-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideShow 10s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.categories-container {
+  z-index: 2;
+  position: relative;
+}
+
+/* Footer.js */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .nav-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer .nav-link:hover {
+  color: #ffc107;
+}
+
+.footer .nav-item {
+  margin-right: 15px;
+}
+
+.review {
+  margin-top: 100px;
+}
+
+.fuente {
+  font-family: sans-serif;
+}
